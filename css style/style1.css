@@ -1,0 +1,152 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: all .2s linear;
+  text-transform: capitalize;
+}
+
+body{
+  background: #fafafa  ;
+}
+.container{
+  max-width:1200px;
+  margin:0 auto;
+  padding: 3rem 2rem;
+}
+.container .title{
+  font-size: 3.5rem;
+  color: #444;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.container .products-cont{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+  gap: 2rem;
+}
+.container .products-cont .product{
+  text-align: center;
+  padding: 3rem 2rem;
+  background:  #bfc9ca;
+  box-shadow: 0.5rem 1rem rgba(0,0,0,0.1);
+  outline: .1rem solid #ccc;
+  outline-offset: -1.5rem;
+  cursor: pointer;
+}
+.container .products-cont .product:hover{
+  outline: .2rem solid #222;
+  outline-offset: 0;
+}
+.container .products-cont .product:hover img{
+  transform: scale(.9);
+}
+.container .products-cont .product h3{
+  padding: .5rem 0;
+  font-size: 2rem;
+  color: #444;
+}
+.container .products-cont .product:hover h3{
+  color: #aed6f1;
+}
+.container .products-cont .product .price{
+  font-size: 2rem;
+  color: #444;
+}
+.product-preview{
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0,0,0,.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.product-preview .preview{
+  display: none;
+  padding: 2rem;
+  text-align: center;
+  background: #e5e7e9;
+  position: relative;
+  margin: 1rem;
+  width: 40rem;
+}
+.product-preview .preview.active{
+  display: inline-block;
+
+}
+.product-preview .preview .fa-times{
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+  color: #444;
+  font-size: 4rem;
+}
+.product-preview .preview .fa-times:hover{
+  transform: rotate(90deg);
+}
+.product-preview .preview h3{
+  color: #444;
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+.product-preview .preview .stars{
+  padding: 0.5rem 0;
+  font-size: 1.7rem;
+}
+.product-preview .preview .stars i{
+  color: #52be80;
+}
+.product-preview .preview .stars span{
+  color: #2c3e50;
+}
+.product-preview .preview p{
+  line-height: 1.5;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  color: #777;
+}
+.product-preview .preview .price{
+  padding: 0.5rem 0;
+  font-size: 2.5rem;
+  color: black;
+}
+.product-preview .preview .buttons{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.product-preview .preview .buttons a{
+  flex: 1 1 10rem;
+  padding: 0.5rem;
+  font: 1.2rem;
+  color: #444;
+  border: 1rem solid #444;
+}
+.product-preview .preview .buttons a.cart{
+  background: #444;
+  color: #fff;
+}
+.product-preview .preview .buttons a.cart:hover{
+  background: #111;
+}
+.product-preview .preview .buttons a.buy:hover{
+  background: #444;
+  color: #fff;
+}
+
+.main-footer{
+  text-align: right;
+  padding:20px;
+  margin-top:40px;
+  color: black;
+  background:  #ffcdd2;
+}

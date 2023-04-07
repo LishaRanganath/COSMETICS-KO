@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+:root{
+  --blue:#2980b9;
+  --red:tomato;
+  --orange:orange;
+  --black:#333;
+  --white:#fff;
+  --bg-color:#eee;
+  --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+  --border:.1rem solid #999;
+}
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.message{
+  background-color: var(--blue);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  border-radius: .5rem;
+  background-color: var(--white);
+  padding: 1.5rem 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:1.5rem;
+}
+.message span{
+  font-size: 2rem;
+  color: var(--black);
+}
+.message i{
+  font-size: 2.5rem;
+  color: var(--black);
+  cursor: pointer;
+}
+.message i:hover{
+  color: var(--red);
+}
+.header{
+  background-color: var(--blue);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.header .flex{
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header .flex .cart{
+  margin-left: 2rem;
+  font-size: 2rem;
+  color: var(--white);
+}
+.header .flex .cart:hover{
+  color: var(--orange);
+}
+.header .flex .cart span{
+  padding: .1rem .5rem;
+  border-radius: .5rem;
+  background-color: var(--white);
+  color: var(--blue);
+  font-size:2rem;
+}
+.product .btn{
+  background: white;
+  color: #fff;
+
+  padding: 0.5rem;
+  font: 1.2rem;
+  color: #444;
+  border: 1rem;
+}
+.product .btn:hover{
+  background: #111;
+}

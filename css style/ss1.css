@@ -1,0 +1,15 @@
+.cont{
+  color: black;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  justify-content: center;
+}
+.cont li{
+  color: black;
+  font-size: 1rem;
+  padding-top: .5rem;
+}
+h1{
+  text-align: center;
+}

@@ -1,0 +1,58 @@
+create table user(userid int primary key,firstname varchar(50),lastname varchar(50),email varchar(80),contactno int);
+
+create table skincare(product_id int primary key,product varchar(100),brand varchar(50),price int);
+insert into skincare values(1001,'facecream','olay',490);
+insert into skincare values(1002,'VitC_facecream','mamaearth',510);
+insert into skincare values(1003,'VitC_facewash','mamaearth',480);
+insert into skincare values(1004,'watergel','neutrogena',525);
+insert into skincare values(1005,'facewash','mcaffeine',525);
+insert into skincare values(1006,'facewash','ridacne',599);
+insert into skincare values(1007,'facewash','himalaya',250);
+insert into skincare values(1008,'oilfree facecream','neutrogena',299);
+insert into skincare values(1009,'antiwrinkle facecream','ponds',310);
+insert into skincare values(1010,'aloevera gel','patanjali',199);
+insert into skincare values(1011,'aloevera gel','himalaya',199);
+insert into skincare values(1012,'aloevera gel','biotic',210);
+insert into skincare values(1013,'face scrub','mcaffeine',310);
+insert into skincare values(1014,'face scrub','neutrogena',299);
+insert into skincare values(1015,'face scrub','biotic',250);
+
+create table makeup(product_id int primary key,product varchar(100),brand varchar(50),price int);
+insert into makeup values(2001,'red gloss','mac',520);
+insert into makeup values(2002,'red gloss','lakme',520);
+insert into makeup values(2003,'red matte','lakme',320);
+insert into makeup values(2004,'brown matte','lakme',320);
+insert into makeup values(2005,'brown matte','nyka',220);
+insert into makeup values(2006,'red wine','nyka',420); insert into makeup values(2007,'red wine','mac',620);
+insert into makeup values(2008,'rose','mac',699);
+insert into makeup values(2009,'peach pink','nyka',520);
+insert into makeup values(2010,'pink gloss','nyka',420);
+insert into makeup values(2011,'fitme foundation','maybelline',520);
+insert into makeup values(2012,'mattefinish foundation','revlon',620);
+insert into makeup values(2013,'superblendable foundation','loreal',599);
+insert into makeup values(2014,'compact powder','lakme',399);
+insert into makeup values(2015,'spotlight eyeshadow palette','lakme',699);
+insert into makeup values(2016,'eyemakeup set','menow',799);
+
+create table sanitise(product_id int primary key,product varchar(100),brand varchar(50),price int);
+insert into sanitise values(3001,'hand sanitiser','himalaya',299);
+insert into sanitise values(3002,'hand sanitiser','dabur',199);
+insert into sanitise values(3003,'hand sanitiser','dettol',199);
+insert into sanitise values(3004,'hand sanitiser','patanjali',159);
+insert into sanitise values(3005,'hand sanitiser packof3','patanjali',300);
+insert into sanitise values(3006,'makeup remover','neutrogena',299);
+insert into sanitise values(3008,'herbal facewipes','himalaya',199);
+insert into sanitise values(3009,'facewipes','clean&clear',159);
+insert into sanitise values(3010,'handwash','dettol',259);
+
+create table haircare(product_id int primary key,product varchar(100),brand varchar(50),price int);
+insert into haircare values(4001,'keratin shampoo','tresemme',599);
+insert into haircare values(4002,'keratin conditioner','tresemme',499);
+insert into haircare values(4003,'conditioner','loreal paris',399);
+insert into haircare values(4004,'conditioner','dove',299);
+insert into haircare values(4005,'shampoo','loreal paris',399);
+insert into haircare values(4006,'shampoo','dove',299);
+insert into haircare values(4007,'shampoo','panteen',399);
+insert into haircare values(4008,'herbal shampoo','himalaya',199);
+insert into haircare values(4009,'herbal shampoo','himalaya',199);
+insert into haircare values(4010,'onion hairserum','mamaearth',399);
